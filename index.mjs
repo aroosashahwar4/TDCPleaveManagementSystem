@@ -142,9 +142,9 @@ app.use(adminJs.options.rootPath, adminRouter)
 // Sync DB and start server
 const PORT = 3000
 await sequelize.sync();
-sequelize.sync({ alter: true }).then(() => {
-  app.listen(PORT, '192.168.5.141', () => {
-    console.log(`✅ AdminJS running at http://192.168.5.141:${PORT}${adminJs.options.rootPath}`)
+sequelize.sync( ).then(() => {
+  app.listen(PORT, '192.168.5.157', () => {
+    console.log(`✅ AdminJS running at http://192.168.5.157:${PORT}${adminJs.options.rootPath}`)
   })
 })
 
