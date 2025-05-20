@@ -1,0 +1,23 @@
+{
+  "name": "testappp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@adminjs/express": "^6.1.1",
+    "@adminjs/sequelize": "^4.1.1",
+    "adminjs": "^7.8.15",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7",
+    "uuid": "^11.1.0"
+  }
+}
