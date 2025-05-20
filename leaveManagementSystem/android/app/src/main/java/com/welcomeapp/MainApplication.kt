@@ -1,4 +1,4 @@
-package com.welcomeapp
+package com.LeaveManagementSystem
 
 import android.app.Application
 import com.facebook.react.PackageList

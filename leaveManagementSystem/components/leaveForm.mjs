@@ -58,7 +58,7 @@ const LeaveForm = ({ onSubmit = () => {} }) => {
     try {
       console.log('Sending payload:', payload);
 
-      const res = await axios.post('http://192.168.5.141:3000/api/leaves', payload);
+      const res = await axios.post('http://192.168.5.157:3000/api/leaves', payload);
 
 
       console.log('Saved:', res.data);
