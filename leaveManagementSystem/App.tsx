@@ -11,7 +11,14 @@ export default function App() {
       {showAdmin ? (
         <>
           {/* WebView showing AdminJS dashboard */}
-          <WebView source={{ uri: 'http://192.168.5.157:3000/admin' }} style={{ flex: 1 }} />
+          <WebView source={{ uri: 'http://192.168.5.157:3000/admin' }} style={{ flex: 1 }} 
+
+          onError={(syntheticEvent) => {
+                     const { nativeEvent } = syntheticEvent;
+                     console.warn('WebView error: ', nativeEvent);
+      }}
+       onLoadEnd={() => console.log('WebView load finished')}
+  />
           {/* Button to open leave form */}
           <Button title="Fill Leave Form" onPress={() => setShowAdmin(false)} />
         </>

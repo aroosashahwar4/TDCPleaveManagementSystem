@@ -125,14 +125,12 @@ const adminJs = new AdminJS({
 // Express setup
 const app = express();
 
-app.use(cors())
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 
 // Mount routes
 app.use('/api/leaves', leaveRoutes(Leave));
-
-
 
 
 // ✅ Setup AdminJS router
@@ -144,7 +142,7 @@ const PORT = 3000
 await sequelize.sync();
 sequelize.sync( ).then(() => {
   app.listen(PORT, '192.168.5.157', () => {
-    console.log(`✅ AdminJS running at http://192.168.5.157:${PORT}${adminJs.options.rootPath}`)
+    console.log(`✅ AdminJS running at http://192.168.5.157${PORT}${adminJs.options.rootPath}`)
   })
 })
 
