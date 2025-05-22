@@ -10,7 +10,7 @@ import leaveRoutes from './routes/leaveRoutes.mjs';
 import cors from 'cors'
 import { v4 as uuidv4 } from 'uuid'
 import bodyParser from 'body-parser';
-import betterSqlite3 from 'better-sqlite3';
+
 
 // Register Sequelize adapter
 AdminJS.registerAdapter(AdminJSSequelize)
@@ -18,8 +18,8 @@ AdminJS.registerAdapter(AdminJSSequelize)
 // Initialize Sequelize with SQLite
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: './database.sqlite',
-  dialectModule: betterSqlite3  // ✅ Use it here
+  storage: './database.sqlite'
+  
 })
 
 // Define models
