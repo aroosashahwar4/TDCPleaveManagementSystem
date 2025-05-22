@@ -4,11 +4,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "build": "npm install --build-from-source"
+    "build": "npm install --build-from-source",
+    "start": "node index.mjs"
   },
   "engines": {
-  "node": "18.x"
-},
+    "node": "18.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,11 +18,11 @@
     "@adminjs/express": "^6.1.1",
     "@adminjs/sequelize": "^4.1.1",
     "adminjs": "^7.8.15",
+    "better-sqlite3": "^11.10.0",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "sequelize": "^6.37.7",
-    "sqlite3": "^5.1.7",
     "uuid": "^11.1.0"
   }
 }
